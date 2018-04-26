@@ -1,0 +1,60 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors lmm
+ * @date    2018-04-26 13:51:10
+ * @version $Id$
+ */
+
+.wrap {
+    position: relative;
+    margin: 0;
+    padding-bottom: 36px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    border: 1px solid #000;
+}
+.slide-box {
+    position: absolute;
+    font-size: 0;
+}
+.slide-box img {
+    display: inline-block;
+}
+.wrap .btn-area{
+    position: absolute;
+    bottom: 7px;
+    left: 5px;
+}
+.btn-area span {
+    color: #333;
+    font-size: 12px;
+    line-height: 12px;
+    background-color: #ffd139;
+    padding: 3px 10px;
+    border-radius: 5px;
+}
+.cleafix:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+.navigat {
+    position: absolute;
+    left: 50%;
+    bottom: 5%;
+    height: 10px;
+    line-height: 10px;
+}
+.navigat span {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 2px;
+    background: #666;
+    border-radius: 50%;
+    line-height: 10px;
+}
+.navigat span.active {
+    opacity: 0.5;
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>slide</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="wrap" id="slide-wrap">
+        <div class="slide-box cleafix">
+            <img src="image/1.jpg" /><img src="image/2.jpg" /><img src="image/3.jpg" /><img src="image/4.jpg" />
+        </div>
+        <div class="btn-area">
+            <span class="prev-btn"></span>
+            <span class="next-btn"></span>
+        </div>
+        <div class="navigat"></div>
+    </div>
+    <div class="wrap" id="slide-wrap2">
+        <div class="slide-box cleafix">
+            <img src="image/1.jpg" /><img src="image/2.jpg" /><img src="image/3.jpg" /><img src="image/4.jpg" /><img src="image/5.jpg" /><img src="image/6.jpg" />
+        </div>
+        <div class="btn-area">
+            <span class="prev-btn">上一张</span>
+            <span class="next-btn">下一张</span>
+        </div>
+        <div class="navigat"></div>
+    </div>
+    <div class="wrap" id="slide-wrap3">
+        <div class="slide-box cleafix">
+            <img src="image/1.jpg" /><img src="image/2.jpg" /><img src="image/3.jpg" /><img src="image/4.jpg" /><img src="image/5.jpg" /><img src="image/6.jpg" />
+        </div>
+        <div class="btn-area">
+            <span class="prev-btn">上一张</span>
+            <span class="next-btn">下一张</span>
+        </div>
+        <div class="navigat"></div>
+    </div>
+    <script type="text/javascript" src="js/slider.js"></script>
+    <script type="text/javascript">
+    window.onload = function() {
+        var silde1 = new silde('slide-wrap', {
+          time: 2000,
+          showImgLen: 4,
+          betweenMargin: 5,
+          prevBtnShow: true,
+          prevText: '<',
+          nextText: '>'
+        });
+        var silde2 = new silde('slide-wrap2', {
+          time: 1500,
+          showImgLen: 2,
+          betweenMargin: 10,
+          prevBtnShow: true,
+          navigatShow: false
+        });
+        var silde3 = new silde('slide-wrap3', {
+          time: 3000,
+          showImgLen: 1,
+          betweenMargin: 15,
+          prevBtnShow: false
+        });
+    }
+    </script>
+</body>
+</html>
