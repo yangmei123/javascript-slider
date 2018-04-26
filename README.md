@@ -2,6 +2,11 @@
 
 #### 使用方法
 
+#### 效果
+
+![Image text](https://github.com/yangmei123/javascript-slider/blob/master/demo.gif)
+
+
 1. 页面引入js和css;
 
 2. 页面中调用;
